@@ -2,13 +2,15 @@
   "name": "bun_mobx_graphql",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "description": "A React Native app using Expo, MobX, and GraphQL",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "dev": "expo start --dev-client",
+    "lint": "eslint . --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@apollo/client": "^3.13.8",
